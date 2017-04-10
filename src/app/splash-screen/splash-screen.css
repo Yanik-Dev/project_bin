@@ -1,0 +1,62 @@
+.splash{
+    background-color: #2980b9;
+    display:inline-block;
+    height: 100vh;
+    width: 50%;
+}
+
+.left{
+    float: left;
+    background-image: url("../../assets/img/left_earth.png");
+    background-size: 683px 100%;
+    background-repeat: no-repeat;
+    animation: slideLeft 2s ease-in-out;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    transform-origin: left;
+}
+
+.right{
+    float:right;
+    background-image: url("../../assets/img/right_earth.png");
+    background-size: 683px 100%;
+    background-repeat: no-repeat;
+    animation: slideRight 2s ease-in-out;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+.right img{
+    position: absolute;
+    right: 0;
+}
+
+/*
+.splash-logo{
+    height: 40%;
+    width: 40%;
+    position:fixed;
+    top: 150px;
+    left: 550px;
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: fade 2.5s backwards;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+*/
+
+@keyframes slideLeft{
+    100% {transform: translateX(-1366px);}
+}
+
+@keyframes slideRight{
+    to {transform: translateX(1366px);}
+}
+
+@keyframes fade{
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+

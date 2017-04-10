@@ -1,0 +1,83 @@
+.container{
+    width: 100%;
+    height:100vh;
+    display: flex;
+}
+
+.image{
+    background-size: 100% 100%;
+    background-image: url('../../assets/img/fg_bg.png');
+    background-repeat: no-repeat;
+    float:left;
+    flex: 4;
+}
+
+.login{
+    flex: 2;
+    float: right;
+    background-color:white;
+    font-family: 'Franklin Gothic Book', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding-top: 10%;
+}
+
+
+h1{
+    color: #2980b9;
+}
+
+
+.textbox input{
+    padding: 9px;
+    width: 250px;
+    padding-left:30px;
+    border: 1px solid #eee;
+}
+
+.textbox input:focus{
+    border: 2px solid #A6C8FF
+}
+
+.username-textbox{
+    background: url('../../assets/img/login_user.png') scroll 7px 7px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.userpassword-textbox{
+    background: url('../../assets/img/login_key.png') scroll 7px 7px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.remember-me{
+    color: #2980b9;
+    font-size: 15px;
+    margin-right: 149px;
+    margin-left: 10px;
+}
+
+.signin button{
+    padding: 9px;
+    background-color: #2980b9;
+    border:solid 1px #fff;
+    color: white;
+    font-size: 16px;
+    border-radius: 0px;
+    margin-right: 200px;
+}
+
+
+.forgot a{
+    color: #2980b9;
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 80px;
+}
+
+
+@media only screen and (max-width: 840px) {
+    .image{
+        display: none;
+    }
+}
